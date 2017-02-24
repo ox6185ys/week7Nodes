@@ -3,14 +3,16 @@
 <h1>Currency Converter</h1>
 
 <form action="/convert" method="GET">
-  <label for="dollar">Amount of dollars</label>
+  <label for="dollar">Main Currency</label>
   <input type="number" step="any" name="dollar_amount" id="dollar"/>
   <br>
   <label for="to_currency">Convert to</label>
   <select name="to_currency" id="to_currency">
+    <option value="USD">US Dollars</option>
+    <option value="GBp">British Pound</option>
     <option value="EUR">Euros</option>
     <option value="JPY">Japanese Yen</option>
-        <option value="GBp">British Pound</option>
+
   </select>
   <br>
   <button type="submit">Convert</button>

@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var exchangeRates = {'EUR' : .94, 'JPY' : 112.86, };
+var exchangeRates = {'EUR' : .94, 'JPY' : 112.86, 'GBP' : .79716, 'USD' : 1};
 //'GBP' : .797157, 'Rupee' : 66.69,
 router.get('/', function(req, res){
-  //res.send('Currency Site');
+
   res.render('index');
 
 });
@@ -15,6 +15,5 @@ router.get('/convert', function(req, res){
   result = dollars * rate;
   res.render('results', { dollars : dollars, result: result, currency: convertTo})
 
-  //res.send('Todo: convert $' + dollars + " to " + convertTo);
 });
 module.exports = router;
