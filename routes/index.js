@@ -12,9 +12,10 @@ router.get('/convert', function(req, res){
   var amountBaseFX = req.query.dollar_amount;
   var convertTo = req.query.to_currency;
   var convertFrom = req.query.from_currency;
+  
   var rate = exchangeRates[convertTo];
 
-  result = amountBaseFX * rate;
+  result = amountBaseFX * convertTo;
 
   console.log(amountBaseFX);
   console.log(convertFrom);
