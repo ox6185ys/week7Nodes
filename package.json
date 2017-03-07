@@ -1,12 +1,11 @@
 {
-"name": "currency",
-"version": "0.0.1",
-"dependencies":{
-  "express": "~4.14.1",
-  "express-handlebars":"~3.0.0"
-},
-"description":"Simple currency donverter",
-"main": "app.js",
-"author":"Patrick Kelly"
-
+  "name": "currency",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.14.1",
+    "express-handlebars": "~3.0.0"
+  },
+  "description": "Simple currency donverter",
+  "main": "app.js",
+  "author": "Patrick Kelly"
 }

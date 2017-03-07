@@ -1,9 +1,10 @@
 /*This sheet sets styles for the site.*/
 
-body{
-  background: azure;
-  font-family: sans-serif;
+body {
+    background: azure;
+    font-family: sans-serif;
 }
-input, button, select{
-  margin: 5px
+
+input, button, select {
+    margin: 5px
 }
