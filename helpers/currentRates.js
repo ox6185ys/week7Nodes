@@ -10,7 +10,6 @@ function currencyRequest(callback) {
     request( {uri :baseURL, qs: queryParam} , function(error, currency_response, body){
 
         if (!error && currency_response.statusCode == 200){
-            //No error, and there is a response from APOD. Expect the response to be a string.
             console.log("API SAYS \n" + JSON.stringify(body));
             var currencyJSON = JSON.parse(body);   //Convert JSON text to a JavaScript object
             var jsonForTemplate = currencyJSON.rates;  // Rearrange JSON into a more useful format for display in the template
